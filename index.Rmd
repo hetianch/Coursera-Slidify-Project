@@ -1,0 +1,63 @@
+---
+title       : BMI Calculator
+subtitle    : Data Product Course Project
+author      : Hetian Chen
+job         : Student
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, bootstrap]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## About Body Mass Index
+
+1. The body mass index (BMI) or Quetelet index, is a value derived from the mass (weight) and height of an individual.
+2. The BMI is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value.
+3.  BMI was designed for population studies, not individuals
+
+--- .class #id
+
+## BMI Calculation
+
+$$ BMI = \frac{weight_{(kg)}}{height_{(m)}^2}$$
+
+Example: 
+For a guy with weight as 50 kg, and height as 1.62m, his BMI is
+
+```{r}
+BMI = 50 / (1.62^2)
+BMI
+```
+
+--- .class #id2
+
+## BMI Category
+
+Category   | BMI
+-----------|---------
+Severely underweight| <16.0
+Underweight| 16.0-18.5
+Normal     | 18.5 - 25
+Overweight | 25-30
+Moderately obese | 30-35
+Severely obese | 35-40
+Very severely obese | >40
+
+--- .class #id3
+
+## Main Application Interface
+
+```{r fig.width=15, fig.height=5,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("app.png")
+grid.raster(img)
+```
+
+--- .class #id4
+
+
+
+
